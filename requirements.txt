@@ -1,19 +1,21 @@
 # RunPod serverless SDK
 runpod
 
-# Core ML dependencies
+# Chatterbox TTS (Resemble AI)
+chatterbox-tts
+
+# Core ML dependencies (may be included with chatterbox-tts but explicitly listed)
 torch
-torchvision
 torchaudio
 
-# Chatterbox TTS (Coqui TTS fork)
-git+https://github.com/ChatterboxAI/tts.git
-
-# Audio handling
+# Audio handling and processing
 soundfile
 numpy
 scipy
-ffmpeg-python
+librosa
+
+# Optional watermark detection
+perth
 
 # HTTP + utils
 requests
